@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 50vh;
+            background-color: #6600ff;
+            margin-left: 20px; /* เลื่อน body มาทางซ้าย */
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 20px; /* เปลี่ยนเป็น 20px เพื่อความสวยงาม */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            vertical-align: middle; /* ทำให้ภาพและข้อความตรงกัน */
+        }
+        main {
+            display: flex;
+            flex: 1; /* ให้ main ใช้พื้นที่ที่เหลือทั้งหมด */
+            margin-left: 0; /* ยกเลิก margin-left ของ main */
+        }
+        nav {
+            position: sticky;
+            top: 70px; /* ระยะห่างจากด้านบน */
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            height: 100vh; /* ความสูงของเมนูให้เต็มหน้าจอ */
+            width: 200px; /* กำหนดความกว้างของเมนู */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 15px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #724bff;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #f9c61f;
+            color: rgb(255, 255, 255);
+        }
+        .content {
+            padding: 20px;
+            margin-left: 20px; /* เว้นระยะจากเมนูด้านซ้าย */
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1; /* ให้ content ใช้พื้นที่ที่เหลือทั้งหมด */
+        }
+        .content h1 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="D:\dog\P\1.gif" width="100" height="100" alt="Logo">
+    <h1> Thai - Austrian Technical College (TATC)</h1>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="D:\dog\index.html">ประวัติสถานศึกษา</a></li>
+            <li><a href="D:\dog\v1.html">อัตลักษณ์</a></li>
+            <li><a href="D:\dog\v2.html">ปรัชญา</a></li>
+            <li><a href="D:\dog\v3.html">นโยบาย</a></li>
+            <li><a href="D:\dog\v4.html">ทำเนียบ</a></li>
+            <li><a href="D:\dog\v5.html">ฟอร์ม</a></li>
+            <li><a href="D:\dog\v6.html">ประวัติส่วนตัว</a></li>
+            <li><a href="D:\dog\P\a1.pdf">ใบงาน 1</a></li>
+            <li><a href="D:\dog\P\a2.pdf">ใบงาน 2</a></li>
+            <li><a href="D:\dog\P\a3.pdf">ใบงาน 3</a></li>
+            <li><a href="D:\dog\P\a4.pdf">ใบงาน 4</a></li>
+            <li><a href="D:\dog\P\a5.pdf">ใบงาน 5</a></li>
+            <li><a href="D:\dog\P\a6.pdf">ใบงาน 6</a></li>
+            <li><a href="D:\dog\P\a7.pdf">ใบงาน 7</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <article>
+            <p><img src="D:\dog\P\2.jpg"  width="200" height="250"></p>
+            
+        <p><h1>ประวัติส่วนตัว</h1></p>
+        <br>
+        <h1>ข้อมูลส่วนตัว</h1>
+                <p><br>ชื่อ: นางสาว กัญญาณัฐ กลมวง
+                <br>เกิดวันที่: 2 กรกฎาคม 2551
+                <br>ชื่อเล่น: ไอวี่
+                <br>ที่อยู่: 19/65 หมู่6 ซอยสามัคคี17 ถนนภูติอนันต์11 ตำบลพลูตาหลวง อำเภอสัตหีบ จังหวัดชลบุรี
+                <br>อายุ: 16ปี
+                <br>ปวช.2 : แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคสัตหีบ
+                <hr>
+                </p>
+              
+        
+                <p><h2>ข้อมูลด้านการศึกษา</h2>
+                <br>ระดับอนุบาล - ประถมศึกษา ศึกษาที่ : โรงเรียนสัตหีบเขตกองเรือยุทธการ
+                <br>เรียนตั้งแต่ อนุบาล ถึง ป.6
+                <br>ระดับมัธยม ศึกษาที่ : โรงเรียนสิงห์สมุทร
+                <br>เรียนตั้งแต่ มัธยม 1 - 3
+                <br>ปัจจุบัน ศึกษาที่ : วิทลัยเทคนิคสัตหีบ  
+                <br>กำลังศึกษาอยู่ระดับชั้น ปวช.2
+               <hr>
+               </p>
+        
+                
+               <p><h2>งานอดิเรก/สิ่งที่สนใจ</h2>
+                 <br>เล่นเกม
+                 <br>ดูซีรีย์
+                 <br>ฟังเพลง
+                <hr>
+                </p>
+        
+        
+                <p><h2>แรงบันดาลใจที่เลือกเรียนคอมพิวเตอร์</h2>
+                 <br>มีความสนใจในด้านคอมพิวเตอร์คาดว่าสามารถต่อยอดได้ไกลจึงเลือกเรียนสาขานี้
+                <hr>
+                </p>
+        
+        
+                <p><h2>ผลงาน/เกียรติคุณ</h2>
+                 <br>ประถมศึกษาปีที่3-4 เคยเข้าแข่งขันศิลปะหัตถกรรม 
+                 <br>ระดับ เขต ได้รางวัลชนะเลิศ
+                 <br>ระดับ จังหวัด ได้รางวัลชนะเลิศ
+                 <br>ระดับ ภาค ได้รางวัลรองชนะเลิศอันดับที่6
+                 </p>
+        
+        </article>
+</main>
+
+</body>
+</html>

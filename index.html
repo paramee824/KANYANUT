@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 50vh;
+            background-color: #6600ff;
+            margin-left: 20px; /* เลื่อน body มาทางซ้าย */
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 20px; /* เปลี่ยนเป็น 20px เพื่อความสวยงาม */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            vertical-align: middle; /* ทำให้ภาพและข้อความตรงกัน */
+        }
+        main {
+            display: flex;
+            flex: 1; /* ให้ main ใช้พื้นที่ที่เหลือทั้งหมด */
+            margin-left: 0; /* ยกเลิก margin-left ของ main */
+        }
+        nav {
+            position: sticky;
+            top: 70px; /* ระยะห่างจากด้านบน */
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            height: 100vh; /* ความสูงของเมนูให้เต็มหน้าจอ */
+            width: 200px; /* กำหนดความกว้างของเมนู */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 15px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #724bff;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #f9c61f;
+            color: rgb(255, 255, 255);
+        }
+        .content {
+            padding: 20px;
+            margin-left: 20px; /* เว้นระยะจากเมนูด้านซ้าย */
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            flex: 1; /* ให้ content ใช้พื้นที่ที่เหลือทั้งหมด */
+        }
+        .content h1 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="D:\dog\P\1.gif" width="100" height="100" alt="Logo">
+    <h1> Thai - Austrian Technical College (TATC)</h1>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="D:\dog\index.html">ประวัติสถานศึกษา</a></li>
+            <li><a href="D:\dog\v1.html">อัตลักษณ์</a></li>
+            <li><a href="D:\dog\v2.html">ปรัชญา</a></li>
+            <li><a href="D:\dog\v3.html">นโยบาย</a></li>
+            <li><a href="D:\dog\v4.html">ทำเนียบ</a></li>
+            <li><a href="D:\dog\v5.html">ฟอร์ม</a></li>
+            <li><a href="D:\dog\v6.html">ประวัติส่วนตัว</a></li>
+            <li><a href="D:\dog\P\a1.pdf">ใบงาน 1</a></li>
+            <li><a href="D:\dog\P\a2.pdf">ใบงาน 2</a></li>
+            <li><a href="D:\dog\P\a3.pdf">ใบงาน 3</a></li>
+            <li><a href="D:\dog\P\a4.pdf">ใบงาน 4</a></li>
+            <li><a href="D:\dog\P\a5.pdf">ใบงาน 5</a></li>
+            <li><a href="D:\dog\P\a6.pdf">ใบงาน 6</a></li>
+            <li><a href="D:\dog\P\a7.pdf">ใบงาน 7</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>ข้อมูลทั่วไป</h2>
+        <p><strong>ที่ตั้ง:</strong> เลขที่ 193 หมู่ 3 ถนนสุขุมวิท ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี</p>
+        <p><strong>เนื้อที่:</strong> 64 ไร่ 3 งาน 20 ตารางวา</p>
+    
+        <h2>การจัดตั้ง</h2>
+        <p>วิทยาลัยเทคนิคสัตหีบ ก่อตั้งขึ้นตามข้อตกลงระหว่างรัฐบาลไทยและรัฐบาลสาธารณรัฐออสเตรีย โดยออสเตรียให้ความช่วยเหลือทางวิชาการ เครื่องจักร และคณะผู้เชี่ยวชาญ ขณะที่รัฐบาลไทยจัดหาที่ดินและก่อสร้างสถานศึกษา</p>
+    
+        <h2>วัตถุประสงค์</h2>
+        <ul>
+            <li>ผลิตช่างเทคนิคที่สอดคล้องกับความต้องการของสถานประกอบการ</li>
+            <li>ให้นักเรียนนักศึกษาเกิดทักษะตรงกับมาตรฐานช่างเทคนิค</li>
+            <li>พัฒนาแผนการเรียนการสอนให้สอดคล้องกับการพัฒนาภาคอุตสาหกรรมในภูมิภาคตะวันออก</li>
+        </ul>
+    
+        <h2>ประวัติสถานศึกษา</h2>
+        <p>ก่อตั้งเมื่อวันที่ 1 กันยายน พ.ศ. 2512 ในนาม "โรงเรียนเทคนิคสัตหีบ" และยกระดับเป็น "วิทยาลัยเทคนิคสัตหีบ" เมื่อวันที่ 2 สิงหาคม พ.ศ. 2522</p>
+    
+        <h2>พัฒนาการของวิทยาลัย</h2>
+        <ul>
+            <li>พ.ศ. 2527 ได้รับการสนับสนุนเครื่องจักรจากรัฐบาลออสเตรีย มูลค่า 2 ล้านบาท</li>
+            <li>พ.ศ. 2533 ลงนามในข้อตกลงร่วมกับรัฐบาลออสเตรียเพื่อจัดส่งเครื่องจักรเพิ่มเติม</li>
+            <li>พ.ศ. 2548 ได้รับการคัดเลือกให้เป็นสถานศึกษาต้นแบบ (Super Model)</li>
+            <li>พ.ศ. 2551 ได้รับรางวัลพระราชทานสถานศึกษาดีเด่นระดับอาชีวศึกษา</li>
+        </ul>
+    
+        <h2>การเรียนการสอน</h2>
+        <p>วิทยาลัยเทคนิคสัตหีบพัฒนารูปแบบการเรียนการสอนแบบบูรณาการร่วมกับการทำงาน (Work-Integrated Learning - WIL) โดยมีความร่วมมือกับภาคอุตสาหกรรมในหลายโครงการ</p>
+    
+        <h2>รางวัลและการยอมรับ</h2>
+        <ul>
+            <li>พ.ศ. 2558 นักศึกษาสาขาเมคคาทรอนิกส์ได้รับรางวัลพระราชทาน</li>
+            <li>วิทยาลัยได้รับการคัดเลือกเป็นสถานศึกษาที่มีความเป็นเลิศเฉพาะทางด้านอุตสาหกรรมเป้าหมายในโครงการ "Thailand 4.0"</li>
+        </ul>
+    
+        <h2>หลักสูตรการเรียน</h2>
+        <p>ปัจจุบันวิทยาลัยเปิดสอนหลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ในหลายสาขาวิชา เช่น ช่างอากาศยาน เทคโนโลยีการผลิต และเมคคาทรอนิกส์</p>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมาชิก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"], 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-actions input[type="submit"],
+        .form-actions input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #4CAF50;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .form-actions input[type="reset"] {
+            background-color: #f44336;
+        }
+        .form-actions input[type="submit"]:hover,
+        .form-actions input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ฟอร์มสมัครสมาชิก</h1>
+
+    <div class="form-group">
+        <label for="name">ชื่อ-สกุล</label>
+        <input id="name" name="name" type="text" maxlength="30" placeholder="กรุณากรอกชื่อ-สกุล">
+    </div>
+
+    <div class="form-group">
+        <label for="day">วัน</label>
+        <select id="day" name="day">
+            <!-- สร้างรายการวัน -->
+            <option value="">วัน</option>
+            <!-- อัพเดตจำนวนวันตามต้องการ -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- เพิ่มรายการวันที่เหลือ -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="month">เดือน</label>
+        <select id="month" name="month">
+            <!-- สร้างรายการเดือน -->
+            <option value="">เดือน</option>
+            <option value="01">มกราคม</option>
+            <option value="02">กุมภาพันธ์</option>
+            <!-- เพิ่มรายการเดือนที่เหลือ -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="year">ปี</label>
+        <select id="year" name="year">
+            <!-- สร้างรายการปี -->
+            <option value="">ปี</option>
+            <option value="2567">2567</option>
+            <option value="2566">2566</option>
+            <!-- เพิ่มรายการปีที่เหลือ -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>เพศ</label>
+        <input type="radio" id="female" name="gender" value="หญิง">
+        <label for="female">หญิง</label>
+        <input type="radio" id="male" name="gender" value="ชาย">
+        <label for="male">ชาย</label>
+    </div>
+
+    <div class="form-group">
+        <label>สถานะ</label>
+        <input type="radio" id="single" name="status" value="โสด">
+        <label for="single">โสด</label>
+        <input type="radio" id="married" name="status" value="สมรส">
+        <label for="married">สมรส</label>
+        <input type="radio" id="divorced" name="status" value="หย่าร้าง">
+        <label for="divorced">หย่าร้าง</label>
+    </div>
+
+    <div class="form-group">
+        <label>ศาสนา</label>
+        <input type="radio" id="buddhist" name="religion" value="ศาสนาพุทธ">
+        <label for="buddhist">ศาสนาพุทธ</label>
+        <input type="radio" id="christian" name="religion" value="ศาสนาคริสต์">
+        <label for="christian">ศาสนาคริสต์</label>
+        <input type="radio" id="muslim" name="religion" value="ศาสนาอิสลาม">
+        <label for="muslim">ศาสนาอิสลาม</label>
+    </div>
+
+    <div class="form-group">
+        <label for="address">ที่อยู่</label>
+        <textarea id="address" name="address" cols="50" rows="5" placeholder="กรุณากรอกที่อยู่"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">เบอร์ติดต่อ</label>
+        <input id="phone" name="phone" type="text" maxlength="30" placeholder="กรุณากรอกเบอร์ติดต่อ">
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="text" maxlength="30" placeholder="กรุณากรอก E-Mail">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" maxlength="30" placeholder="กรุณากรอก Password">
+    </div>
+
+    <div class="form-group">
+        <label for="image">เลือกรูปภาพ</label>
+        <input id="image" type="file" name="img">
+    </div>
+
+    <div class="form-actions">
+        <input type="submit" value="YES">
+        <input type="reset" value="RESET">
+        <a href="D:\dog\v4.html">กลับ</a>
+    </div>
+</div>
+
+</body>
+</html>
